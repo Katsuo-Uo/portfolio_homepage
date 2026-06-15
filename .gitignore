@@ -1,0 +1,15 @@
+# Local configuration and secrets
+.env
+.env.*
+local.properties
+
+# Android signing material
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+
+# Release artifacts should be uploaded to GitHub Releases
+*.apk
+*.aab
