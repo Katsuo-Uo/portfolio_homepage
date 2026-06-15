@@ -13,3 +13,4 @@ local.properties
 # Release artifacts should be uploaded to GitHub Releases
 *.apk
 *.aab
+key.properties
