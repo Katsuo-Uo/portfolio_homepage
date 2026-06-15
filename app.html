@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="イルマタルと一緒に、プログラミング学習を計画・記録できるAndroidアプリの紹介サイトです。"
+    />
+    <meta name="theme-color" content="#f5f3ff" />
+    <title>イルマタルのプログラミング学習予定帳</title>
+    <link rel="icon" type="image/png" href="./assets/app-icon.png" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ページ上部へ">
+        <img src="./assets/app-icon.png" alt="" />
+        <span>イルマタルの学習予定帳</span>
+      </a>
+      <nav aria-label="メインナビゲーション">
+        <a href="./index.html">トップへ</a>
+        <a href="#intro-title">アプリについて</a>
+        <a href="#features">主な機能</a>
+        <a href="#story">制作について</a>
+        <a href="#download">ダウンロード</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Programming learning app / Android</p>
+          <h1>
+            プログラミング学習を、<br />
+            <span>小さな達成</span>に変えていく。
+          </h1>
+          <p class="hero-description">
+            コーディング、アルゴリズム、問題演習。今日取り組む内容をカードにして、
+            完了記録と学習時間を積み重ねられるAndroidアプリです。
+          </p>
+          <div class="hero-actions">
+            <a
+              class="button button-primary"
+              href="./assets/Ilmatar-Programming-Planner-v1.0.0.apk"
+              download
+            >
+              Android版をダウンロード
+              <span aria-hidden="true">↓</span>
+            </a>
+            <a class="button button-secondary" href="#features">機能を見る</a>
+          </div>
+          <ul class="hero-meta" aria-label="アプリ情報">
+            <li><strong>v1.0.0</strong><span>Version</span></li>
+            <li><strong>Android 7+</strong><span>Platform</span></li>
+            <li><strong>Local first</strong><span>Data</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual reveal" aria-label="アプリ画面イメージ">
+          <div class="orbit orbit-one" aria-hidden="true"></div>
+          <div class="orbit orbit-two" aria-hidden="true"></div>
+          <div class="phone">
+            <div class="phone-speaker" aria-hidden="true"></div>
+            <div class="phone-screen">
+              <div class="mock-status">
+                <span>9:41</span>
+                <span>● ● ▰</span>
+              </div>
+              <div class="mock-heading">
+                <span>2026⌄</span>
+                <strong>Learning Calendar</strong>
+              </div>
+              <div class="mock-calendar" aria-hidden="true">
+                <span class="level-1"></span><span></span><span></span><span class="level-2"></span>
+                <span></span><span class="level-1"></span><span></span><span></span>
+                <span class="level-3"></span><span></span><span></span><span class="level-1"></span>
+                <span></span><span class="level-2"></span><span></span><span></span>
+                <span></span><span class="level-4"></span><span></span><span class="level-2"></span>
+                <span></span><span></span><span class="level-1"></span><span></span>
+                <span class="level-2"></span><span></span><span></span><span class="level-3"></span>
+              </div>
+              <div class="mock-title-row">
+                <strong>今日の学習メニュー</strong>
+                <small>2 cards</small>
+              </div>
+              <article class="mock-card">
+                <span class="mock-tag">AtCoder / Python</span>
+                <strong>探索問題を1問解く</strong>
+                <p>幅優先探索（BFS）・予定時間 45分</p>
+                <div class="mock-progress"><span></span></div>
+              </article>
+              <article class="mock-card mock-card-small">
+                <span class="mock-tag">Code Review</span>
+                <strong>解答コードを振り返る</strong>
+                <p>予定時間 10分</p>
+              </article>
+              <div class="mock-pet">
+                <span>今日も一緒に進めましょう。</span>
+                <div class="pet-sprite" aria-hidden="true"></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-note floating-note-top">
+            <span>今月の累計</span>
+            <strong>12時間 40分</strong>
+          </div>
+          <div class="floating-note floating-note-bottom">
+            <span class="check">✓</span>
+            <div><strong>学習完了</strong><small>記録しました</small></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro section-shell reveal" aria-labelledby="intro-title">
+        <div>
+          <p class="eyebrow">About this app</p>
+          <h2 id="intro-title">学ぶ内容、コードを書く時間、<br />振り返りをひとつの場所に。</h2>
+        </div>
+        <p>
+          プログラミングで「次に何を学ぶか」を考える時間と、実際にコードを書く時間を
+          つなげるために制作しました。必要な機能を一画面にまとめ、
+          キャラクターのイルマタルが継続をそっと応援します。
+        </p>
+      </section>
+
+      <section id="features" class="features section-shell">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Programming study features</p>
+          <h2>プログラミング学習を続けるための機能</h2>
+          <p>問題を選び、コードを書き、達成を振り返るところまで。</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-large reveal">
+            <div class="feature-number">01</div>
+            <div class="feature-copy">
+              <span class="feature-label">Planning</span>
+              <h3>学習カードで、今日書くコードを明確に</h3>
+              <p>
+                問題演習、言語学習、コードの復習などを予定時間・メモとともに登録。
+                横へスワイプすると完了できます。
+              </p>
+            </div>
+            <div class="mini-cards" aria-hidden="true">
+              <div><i></i><span><b>ABC問題をPythonで解く</b><small>45 min</small></span></div>
+              <div><i></i><span><b>アルゴリズム解説を読む</b><small>20 min</small></span></div>
+              <div><i></i><span><b>解答コードを振り返る</b><small>10 min</small></span></div>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-number">02</div>
+            <span class="feature-label">Activity</span>
+            <h3>コーディングの積み重ねをカレンダーで確認</h3>
+            <p>完了した日が色づき、日付を選ぶとその日の問題や学習時間を確認できます。</p>
+            <div class="feature-calendar" aria-hidden="true">
+              <span></span><span class="on-1"></span><span></span><span class="on-2"></span>
+              <span class="on-1"></span><span></span><span class="on-3"></span><span></span>
+              <span></span><span class="on-2"></span><span></span><span class="on-1"></span>
+              <span class="on-4"></span><span></span><span class="on-2"></span><span></span>
+            </div>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-number">03</div>
+            <span class="feature-label">Recommendation</span>
+            <h3>レベル別のおすすめ問題</h3>
+            <p>
+              AtCoder問題を初級・中級・上級から提案。完了済みの問題は記憶し、
+              次の候補へ自動で入れ替わります。
+            </p>
+            <div class="level-pills" aria-hidden="true">
+              <span>初級 A</span><span>中級 C</span><span>上級 E</span>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card-wide reveal">
+            <div class="feature-number">04</div>
+            <div>
+              <span class="feature-label">Companion</span>
+              <h3>イルマタルが学習に寄り添う</h3>
+              <p>
+                状況に合わせたアニメーションとセリフで学習を応援。
+                完了時には達成メッセージを届けます。
+              </p>
+            </div>
+            <div class="ilmatar-showcase" aria-hidden="true">
+              <div class="speech-sample">その一問が力になります！</div>
+              <div class="pet-sprite pet-sprite-large"></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="story" class="story">
+        <div class="section-shell story-inner">
+          <div class="story-copy reveal">
+            <p class="eyebrow">Development story</p>
+            <h2>使い続けたくなる<br />プログラミング学習ツールを目指して。</h2>
+            <p>
+              単なるToDoリストではなく、書いたコードや問題演習の記録が残り、
+              次に取り組むAtCoder問題まで見つかる設計にしました。
+              イルマタルというキャラクターをUIの一部にすることで、機能性と親しみやすさの両立を試みています。
+            </p>
+            <dl class="story-points">
+              <div><dt>設計</dt><dd>モバイルファースト・ローカル保存</dd></div>
+              <div><dt>体験</dt><dd>スワイプ完了・アニメーション</dd></div>
+              <div><dt>改善</dt><dd>実機確認を重ねたレスポンシブ調整</dd></div>
+            </dl>
+          </div>
+          <div class="tech-panel reveal">
+            <p>Built with</p>
+            <ul>
+              <li><strong>React</strong><span>UI / State</span></li>
+              <li><strong>Vite</strong><span>Build tool</span></li>
+              <li><strong>Capacitor</strong><span>Android</span></li>
+              <li><strong>CSS</strong><span>Responsive / Motion</span></li>
+              <li><strong>LocalStorage</strong><span>Learning data</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="download section-shell reveal">
+        <div class="download-character" aria-hidden="true">
+          <div class="pet-sprite pet-sprite-download"></div>
+        </div>
+        <div class="download-copy">
+          <p class="eyebrow">Android app download</p>
+          <h2>イルマタルと、<br />今日のプログラミング学習を始めよう。</h2>
+          <p>
+            このページからAndroid版アプリをダウンロードできます。端末の設定で
+            「不明なアプリのインストール」の許可が必要な場合があります。
+          </p>
+          <a
+            class="button button-primary button-large"
+            href="./assets/Ilmatar-Programming-Planner-v1.0.0.apk"
+            download
+          >
+            APKをダウンロード
+            <span>v1.0.0</span>
+          </a>
+          <small>ファイルサイズ：約7.8MB / Android 7.0以上</small>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="brand">
+          <img src="./assets/app-icon.png" alt="" />
+          <span>イルマタルのプログラミング学習予定帳</span>
+        </div>
+        <p>Designed &amp; developed as a personal learning project.</p>
+        <a href="#top">ページ上部へ ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
