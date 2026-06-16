@@ -17,6 +17,10 @@ npx serve .
 
 静的サイトのため、GitHub Pages、Netlify、Cloudflare Pagesなどへそのまま配置できます。
 
+## 問い合わせ
+
+ご意見・ご感想は `mythicguides.feedback@gmail.com` までお願いします。
+
 ## APKの配布
 
 Androidアプリの配布には、リポジトリへ直接APKを置く方法ではなく、
